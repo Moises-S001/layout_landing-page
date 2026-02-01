@@ -12,7 +12,6 @@
 @import 'blocks/view-content-more_explore';
 
 .main {
-  display: grid;
   row-gap: 96px;
   padding-block: 96px;
 
@@ -22,6 +21,24 @@
     padding-block: 120px;
     row-gap: 120px;
   }
+
+  @include on-desktop {
+    padding-block: 120px;
+    row-gap: 120px;
+  }
+}
+
+.section-title {
+  font-family: $font-page;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -1.5px;
+}
+
+.--section-title {
+  text-align: start;
 }
 
 .footer {
@@ -32,4 +49,7 @@
   height: 180px;
   width: 100%;
 
+  @include on-desktop {
+    height: 359px;
+  }
 }

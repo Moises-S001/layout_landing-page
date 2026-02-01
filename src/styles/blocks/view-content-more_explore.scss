@@ -1,79 +1,56 @@
-.exhibitions-container {
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
+.more-to-explore {
+  .more-to-explore_content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
 
-  @include on-tablet {
-    grid-template-columns: repeat(6, 1fr);
+    .exhibition-card {
+      grid-column: 1 / -1;
+    }
 
+    @include on-tablet {
+      grid-template-columns: repeat(6, 1fr);
+
+      .exhibition-card {
+        grid-column: 2 / 6;
+      }
+    }
+
+    @include on-desktop {
+      grid-template-columns: repeat(12, 1fr);
+      gap: 24px;
+
+      .exhibition-card {
+        grid-column: span 4;
+      }
+    }
   }
 
-}
-
-.exhibition-card {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-}
-
-.image-row-2-cols {
-  grid-column: 1 / -1;
-  margin-bottom: 20px;
-
-  @include on-tablet {
-      grid-column: 2 / 6;
-    }
-}
-
-.img-box {
-  overflow: hidden;
-}
-
-.img-box img {
+  .img-box {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
 
-.image-row-3-cols {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 20px;
-}
-
-.image-row-3-cols img {
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
-
-}
-
-.text-content {
-    text-align: left;
-}
-
-.exhibition-title {
-    color: #d9534f;
+  .exhibition-title-center {
+    color: #d11212;
     text-transform: uppercase;
     font-weight: bold;
+    margin-top: 15px;
     margin-bottom: 10px;
-    font-size: 24px;
-}
+    font-size: 20px;
+    text-align: center;
+  }
 
-.exhibition-date {
+  .exhibition-text {
     color: #555;
     font-size: 16px;
     font-family: Roboto, sans-serif;
     font-weight: 400;
-}
-
-.view-all-exhibitions {
-  border: none;
-  background-color: rgba(209, 45, 53, 1);
-  width: 100%;
-  height: 56px;
-  color: $color-text;
-  font-size: 16px;
-  font-family: $font-page;
-  font-weight: 700;
+    text-align: center;
+    line-height: 1.5;
+  }
 }
