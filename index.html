@@ -7,11 +7,12 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Landing Page</title>
+    <title>The Met</title>
     <link
       rel="stylesheet"
       href="src/styles/main.scss"
     />
+    <link rel="icon" href="src/imagens/THE MET.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -25,7 +26,7 @@
     <header class="header">
       <div class="top-bar">
         <a href="#" class="top-bar__logo-link">
-          <img src="src/imagens/logo-the-met.png" alt="the met logo" class="top-bar__logo">
+          <img src="src/imagens/THE MET.svg" alt="the met logo" class="top-bar__logo">
         </a>
 
         <div class="top-bar__icons">
@@ -49,7 +50,7 @@
     <aside class="page__menu menu" id="menu">
       <div class="top-bar top__menu">
         <a href="#" class="top-bar__logo">
-          <img src="src/imagens/logo-the-met.png" alt="the met logo">
+          <img src="src/imagens/THE MET.svg" alt="the met logo">
         </a>
 
 
@@ -63,13 +64,13 @@
               <a class="nav__link" href="#">Home</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#about-us">About Us</a>
+              <a class="nav__link" href="#plan_your_visit">About Us</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="#now-on-view">Now on view</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#explore-online">Explore Online</a>
+              <a class="nav__link" href="#more-to-explore">Explore Online</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="#contacts">Contacts</a>
@@ -78,15 +79,13 @@
         </nav>
 
         <br>
+        <p class="location_contact">The Met Fifth Avenue</p>
         <a href="tel:+1 212-535-7710" class="menu__phone-number">
-          The Met Fifth Avenue
-          <br>
           +1 212-535-7710
         </a>
         <br>
+        <p class="location_contact">The Met Cloisters</p>
         <a href="tel:+1 212-923-3700" class="menu__phone-number">
-          The Met Cloisters
-          <br>
           +1 212-923-3700
         </a>
         <br>
@@ -96,11 +95,13 @@
     </aside>
 
     <main class="main">
-      <section class="plan_your_visit" id="home">
-        <span class="plan__visit">Plan your visit</span>
-        <h2 class="section-title --section-title">
-           Museum hours
-        </h2>
+      <section class="plan_your_visit" id="plan_your_visit">
+        <div class="section-title-container">
+          <span class="plan__visit">Plan your visit</span>
+          <h2 class="section-title-hours">
+            Museum hours
+          </h2>
+        </div>
 
         <article class="hours_visit">
           <h3 class="location-visit">The Met Fifth Avenue</h3>
@@ -150,8 +151,12 @@
 
           <article class="exhibition-card">
             <div class="img-box">
-              <img class="img --extend" src="./src/imagens/img-content-page/Layer46.png" alt="Layer46">
-              <img class="img --standard" src="./src/imagens/img-content-page/Layer47.png" alt="Layer47">
+              <a href="#" class="img-link --extend">
+                <img class="img" src="./src/imagens/img-content-page/Layer46.png" alt="Layer46">
+              </a>
+              <a href="#" class="img-link --standard">
+                <img class="img" src="./src/imagens/img-content-page/Layer47.png" alt="Layer47">
+              </a>
             </div>
 
 
@@ -163,10 +168,17 @@
 
           <article class="exhibition-card">
             <div class="img-box">
-              <img class="img --one-img" src="./src/imagens/img-content-page/Layer48.png" alt="Layer48">
-              <img class="img --two-img" src="./src/imagens/img-content-page/Layer49.png" alt="Layer49">
-              <img class="img --tree-img" src="./src/imagens/img-content-page/Layer50.png" alt="Layer50">
-
+              <div class="img-3colums">
+                <a href="#" class="img-link --one-img">
+                  <img class="img" src="./src/imagens/img-content-page/Layer48.png" alt="Layer48">
+                </a>
+                <a href="#" class="img-link --two-img">
+                  <img class="img" src="./src/imagens/img-content-page/Layer49.png" alt="Layer49">
+                </a>
+                <a href="#" class="img-link --tree-img">
+                  <img class="img" src="./src/imagens/img-content-page/Layer50.png" alt="Layer50">
+                </a>
+              </div>
             </div>
 
             <div class="text-content">
@@ -177,8 +189,12 @@
 
           <article class="exhibition-card">
             <div class="img-box">
-              <img class="img --standard-reverse" src="./src/imagens/img-content-page/Layer51.png" alt="Layer46">
-              <img class="img --extend-reverse" src="./src/imagens/img-content-page/Layer52.png" alt="Layer47">
+              <a href="#" class="img-link --standard-reverse">
+                <img class="img" src="./src/imagens/img-content-page/Layer51.png" alt="Layer46">
+              </a>
+              <a href="#" class="img-link --extend-reverse">
+                <img class="img" src="./src/imagens/img-content-page/Layer52.png" alt="Layer47">
+              </a>
             </div>
 
 
@@ -203,7 +219,9 @@
           <article class="exhibition-card">
 
             <div class="img-box">
-              <img src="./src/imagens/img-content-page/Layer53.png" alt="Layer46">
+              <a href="#" class="img-link">
+                <img class="img" src="./src/imagens/img-content-page/Layer53.png" alt="Layer46">
+              </a>
             </div>
 
 
@@ -216,7 +234,9 @@
           <article class="exhibition-card">
 
             <div class="img-box">
-              <img class="img" src="./src/imagens/img-content-page/Layer54.png" alt="Layer46">
+              <a href="#" class="img-link">
+                <img class="img" src="./src/imagens/img-content-page/Layer54.png" alt="Layer46">
+              </a>
             </div>
 
 
@@ -229,7 +249,9 @@
           <article class="exhibition-card">
 
             <div class="img-box">
-              <img src="./src/imagens/img-content-page/Layer55.png" alt="Layer46">
+              <a href="#" class="img-link">
+                <img class="img" src="./src/imagens/img-content-page/Layer55.png" alt="Layer46">
+              </a>
             </div>
 
 
@@ -244,33 +266,57 @@
       <section class="contact-us" id="contacts">
         <h2 class="section-title">Contact us</h2>
         <div class="contacts_content">
-          <div class="contacts_content-fifth_Avenue">
-            <h3>The Met Fifth Avenue</h3>
+          <div class="container_information-contacts">
+            <div class="contacts_content-fifth_Avenue">
+              <h3>The Met Fifth Avenue</h3>
 
-            <p>Phone</p>
-            <p>+1 212-535-7710</p>
-            <p>Address</p>
-            <p>1000 Fifth Avenue <br> New York, NY 10028</p>
-          </div>
-          <div class="contacts_content-cloisters">
-            <h3>The Met Cloisters</h3>
+              <p>Phone</p>
+              <p>
+                <a href="tel:+1 212-535-7710" class="contact_phone">
+                  +1 212-535-7710
+                </a>
+              </p>
+              <p>Address</p>
+              <a href="https://www.google.com/maps/place/1000+5th+Ave,+New+York,+NY+10028,+EUA/@40.7790628,-73.9807749,15z/data=!4m20!1m13!4m12!1m4!2m2!1d-48.4573184!2d-1.4450688!4e1!1m6!1m2!1s0x89c25896dcda965d:0x5bbcfab18ea2c739!2s1000+5th+Ave,+New+York,+NY+10028,+EUA!2m2!1d-73.9627407!2d40.7790613!3m5!1s0x89c25896dcda965d:0x5bbcfab18ea2c739!8m2!3d40.7790613!4d-73.9627407!16s%2Fg%2F1yl46zflv?entry=ttu&g_ep=EgoyMDI2MDIwNC4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              class="location">
+                <p>1000 Fifth Avenue <br> New York, NY 10028</p>
+              </a>
+            </div>
+            <br>
+            <div class="contacts_content-cloisters">
+              <h3>The Met Cloisters</h3>
 
-            <p>Phone</p>
-            <p>+1 212-923-3700</p>
-            <p>Address</p>
-            <p>99 Margaret Corbin Drive<br> Fort Tryon Park <br> New York, NY 10040</p>
+              <p>Phone</p>
+              <p>
+                <a href="tel:+1 212-923-3700" class="contact_phone">
+                  +1 212-923-3700
+                </a>
+              </p>
+              <p>Address</p>
+              <a href="https://www.google.com/maps/place/Cloisters/@40.8648628,-73.9317274,17z/data=!3m1!4b1!4m6!3m5!1s0x89c2f40170f2a62b:0x9191e7fa95df29ad!8m2!3d40.8648628!4d-73.9317274!16zL20vMDFyczdi?entry=ttu&g_ep=EgoyMDI2MDIwNC4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              class="location">
+                <p>99 Margaret Corbin Drive<br> Fort Tryon Park <br> New York, NY 10040</p>
+              </a>
+            </div>
           </div>
 
           <div class="form_contact">
             <form onsubmit="this.reset(); return false;" class="form_contact-camp">
-              <input type="text" placeholder="Name"
-                class="form_input-contact">
+              <input type="text" placeholder="Ex: Jane Doe"
+                class="form_input-contact"
+                required
+                >
 
-              <input type="text" placeholder="email"
-                class="form_input-contact">
+              <input type="email" placeholder="Ex: seuemail@gmail.com"
+                class="form_input-contact"
+                required
+                >
 
               <textarea name="message" id="message"
-                placeholder="message" class="message_contact"></textarea>
+              placeholder="message" class="message_contact"
+              required></textarea>
               <button type="submit" class="button_contact">Send</button>
             </form>
           </div>

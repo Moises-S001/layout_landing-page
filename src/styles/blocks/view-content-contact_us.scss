@@ -3,22 +3,23 @@
     display: grid;
     gap: 32px;
     grid-template-columns: repeat(2, 1fr);
+    .container_information-contacts {
+      grid-column: 1 / -1;
+    }
     .form_contact {
       grid-column: 1 / -1;
     }
 
     @include on-tablet {
       grid-template-columns: repeat(6, 1fr);
-      gap: 24px;
+      row-gap: 24px;
 
-      .contacts_content-fifth_Avenue {
-        grid-column: 1 / 3;
-      }
-      .contacts_content-cloisters {
-        grid-column: 1 / 3;
+      .container_information-contacts {
+        grid-column: 1 / 4;
       }
       .form_contact {
         grid-column: 4 / -1;
+        grid-row: 1 / -1;
       }
     }
 
@@ -26,11 +27,17 @@
       grid-template-columns: repeat(12, 1fr);
       gap: 24px;
 
-      .contacts_content-fifth_Avenue {
-        grid-column: 1 / 3;
-      }
-      .contacts_content-cloisters {
-        grid-column: 4 / 6;
+      .container_information-contacts {
+        grid-column: 1 / 8;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 24px;
+        .contacts_content-fifth_Avenue {
+          grid-column: 1 / 4;
+        }
+        .contacts_content-cloisters {
+          grid-column: 5 / -1;
+        }
       }
       .form_contact {
         grid-column: 8 / -1;
@@ -99,4 +106,38 @@
   &:active {
     background-color: rgba(235, 52, 61, 1);
   }
+}
+
+.contact_phone {
+  display: block;
+  margin-bottom: 16px;
+  color: rgba(62, 62, 62, 1);
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 0;
+  font-family: $font-page;
+  font-weight: 700;
+  font-style: Bold;
+  transition: color 0.3s ease;
+}
+
+.contact_phone:hover {
+  color: #c41230;
+}
+
+.location {
+  font-family: $font-page;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0;
+  text-decoration: none;
+  color: rgba(62, 62, 62, 1);
+  transition: color 0.3s ease;
+}
+
+.location:hover {
+  color: #c41230;
 }
